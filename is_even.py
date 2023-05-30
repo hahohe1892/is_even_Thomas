@@ -11,7 +11,7 @@ def is_even(x):
         raise TypeError('x must be an integer')
 
     
-    return x % 2
+    return (x % 2) == 0
     
 
 
@@ -27,3 +27,4 @@ except TypeError:
 assert has_failed
 
 assert is_even(1) is not None
+assert is_even(1) is False
