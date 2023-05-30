@@ -10,9 +10,9 @@ def is_even(x):
     if not isinstance(x, int):
         raise TypeError('x must be an integer')
 
-
-
-
+    
+    return x % 2
+    
 
 
 
@@ -25,3 +25,5 @@ except TypeError:
     has_failed = True
 
 assert has_failed
+
+assert is_even(1) is not None
